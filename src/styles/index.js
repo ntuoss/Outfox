@@ -4,7 +4,6 @@ import { createGlobalStyle, ThemeProvider } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   html {
-    font-size:1vw;
     color: ${props => props.theme.primaryColor};
     background: ${props => props.theme.backgroundColor};
   }
@@ -15,6 +14,14 @@ const GlobalStyle = createGlobalStyle`
   }
   a {
     text-decoration: none;
+    &,
+    &:hover,
+    &:focus,
+    &:visited {
+      color: ${props => props.theme.primaryColor};
+      background: inherit;
+      box-shadow: inherit;
+    }
   }
   /* only apply in webkit */
   @media screen and (-webkit-min-device-pixel-ratio:0) { 

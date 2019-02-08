@@ -24,7 +24,6 @@ const Sidebar = props => {
         <Logo size='3.2rem' />
         <span>{title}</span>
       </SideBarHeader>
-      {/* <BreakLine /> */}
       <List>
         {routes.map(item => {
           if (item.redirect || item.headerRoute) return null;

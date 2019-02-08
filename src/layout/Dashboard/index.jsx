@@ -12,6 +12,7 @@ import SideBar from 'layout/SideBar';
 import Header from 'layout/Header';
 import Footer from 'layout/Footer';
 
+import NotFoundPage from 'containers/NotFound';
 import { Wrapper, Main } from './style';
 
 const Dashboard = () => (
@@ -32,6 +33,7 @@ const Dashboard = () => (
               <Route {...prop} key={prop.path} />
             ),
           )}
+          <Route component={NotFoundPage} />
         </Switch>
         <Footer />
       </Main>
