@@ -1,4 +1,4 @@
-# Outfox
+# Iceberx
 
 This is the web app design for NTU student life portal, working with NTUOSS X NTUSU.
 
