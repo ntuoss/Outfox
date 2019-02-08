@@ -14,7 +14,7 @@ function Header(props) {
         <Title color='transparent' href='#'>
           {
             // prettier-ignore
-            routes.find(item => item.path === props.location.pathname).navbarName
+            (routes.find(item => item.path === props.location.pathname) || { navbarName: ''}).navbarName
           }
         </Title>
         <HeaderLinks />
