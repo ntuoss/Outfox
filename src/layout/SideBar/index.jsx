@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import * as PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 
 import { Icon } from '@material-ui/core';
@@ -8,7 +8,6 @@ import Logo from 'components/Logo';
 import {
   Drawer,
   SideBarHeader,
-  BreakLine,
   List,
   NavLink,
   ListItem,
