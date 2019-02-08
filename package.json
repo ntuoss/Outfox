@@ -1,17 +1,17 @@
 {
-  "name": "outfox",
+  "name": "iceberx",
   "version": "0.1.0",
   "private": true,
   "description": "This is the web app design for NTU student life portal, working with NTUOSS X NTUSU",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ZaynJarvis/Outfox.git"
+    "url": "git://github.com/ntuoss/iceberx.git"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development react-scripts start",
     "build": "cross-env NODE_ENV=production react-scripts build",
     "test": "cross-env NODE_ENV=test react-scripts test",
-    "lint": "eslint --ignore-path .gitignore --ext=js,jsx --fix . ",
+    "lint": "eslint --ignore-path .gitignore --ext=js,jsx --fix ./src ",
     "lint:css": "stylelint './app/**/*.jsx' './app/**/*.js'"
   },
   "dependencies": {
@@ -92,7 +92,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.{js,css,md}": [
       "yarn run lint",
       "yarn run lint:css",
       "git add --force"
